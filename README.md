@@ -43,10 +43,8 @@ The file `config.tex` includes relevant
 packages and does some configuration stuff. Nearly every property or characteristic can be configured/modified here, beginning from page layout, header and footer, citaion style etc.). *Please also read the comments in the file catefully and - if needed - read the package documentations at [CTAN](http://www.ctan.org)!*
 
 ## template-specific commands
-- `\AutorDerArbeit{Max Mustermann}` sets the Author to *Max Mustermann*,
-- `\TitelDerArbeit{Ein Testtitel}` sets the Title to *Ein Testtiitel*
-- `\DieFirma{Musterfirma GmbH}` sets the Company to *Musterfirma GmbH*
-- `\Kurs{WWI14SEA}` sets the course lable to *WWI14SEA*
+- `\ThesisTitle{Max Mustermann}` sets the Author to *Max Mustermann*,
+- `\ThesisAuthor{Ein Testtitel}` sets the Title to *Ein Testtiitel*
 
 Titlepage, abstract and statutory declaration will be filled with these information
 .
