@@ -5,16 +5,15 @@
 * __Always use the latest version of this template!__
 * The template is written for a thesis in German, but can be adapted easily to other languages.
 * **Using this template requires basic knowledge of LaTeX! Please get used to it *before* you start writing!**
-* [Here](hinweise-wissenschaftliche-arbeiten.md) are some general remarks (in German) on how to write your thesis.
 
 
 ## Installation Instructions
 
 ### Prerequisites
 
-First, you'll need a working LaTeX installation. Please find one for your
-operating system, e.g.:
+First, you'll need a working LaTeX installation or Online-Plattform. Please find one to suit your needs, e.g.: 
 
+* Online-Platform: [Overleaf](https://www.overleaf.com)
 * Windows-User: [MikTex](http://www.miktex.org)
 * Mac-User: [MacTex](http://www.tug.org/mactex/index.html)
 * Linux-User: [TexLive](http://www.tug.org/texlive/) (included in most Linux distributions)
