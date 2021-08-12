@@ -41,12 +41,12 @@
 %
 
 % Uncomment the next three lines for author-year-style with footnotes (Chicago)
-\usepackage[backend=biber, autocite=footnote, style=authoryear, dashed=false]{biblatex} 	%Use Author-Year-Cites with footnotes
-\AdaptNoteOpt\footcite\multfootcite   %will add  separators if footcite is called multiple consecutive times 
-\AdaptNoteOpt\autocite\multautocite % will add  separators if autocite is called multiple consecutive times
+%\usepackage[backend=biber, autocite=footnote, style=authoryear, dashed=false]{biblatex} 	%Use Author-Year-Cites with footnotes
+%\AdaptNoteOpt\footcite\multfootcite   %will add  separators if footcite is called multiple consecutive times 
+%\AdaptNoteOpt\autocite\multautocite % will add  separators if autocite is called multiple consecutive times
 
 % Uncomment the next line for IEEE-style 
-% \usepackage[backend=biber, autocite=inline, style=ieee]{biblatex} 	% Use IEEE-Style (e.g. [1])
+\usepackage[backend=biber, autocite=inline, style=ieee]{biblatex} 	% Use IEEE-Style (e.g. [1])
 
 % Uncomment the next line for alphabetic style 
 % \usepackage[backend=biber, autocite=inline, style=alphabetic]{biblatex} 	% Use alphabetic style (e.g. [TGK12])
@@ -59,6 +59,9 @@
 \DefineBibliographyStrings{ngerman}{  %Change u.a. to et al. (german only!)
 	andothers = {{et\,al\adddot}},
 }
+
+\renewcommand*{\mkbibacro}[1]{#1} % Use same font for URL/DOI/ISBN in bibliography 
+\urlstyle{same} % use same font for DOI- and URL-Links 
 
 %%% Uncomment the following lines to support hard URL breaks in bibliography 
 %\apptocmd{\UrlBreaks}{\do\f\do\m}{}{}
@@ -84,7 +87,7 @@
 \usepackage[printonlyused]{acronym}
 \@ifpackagelater{acronym}{2015/03/20}
   {%
-    \renewcommand*{\aclabelfont}[1]{\textbf{\textsf{\acsfont{#1}}}}
+    \renewcommand*{\aclabelfont}[1]{\textbf{{\acsfont{#1}}}}
   }%
   {%
   }%
@@ -118,16 +121,23 @@
 
 %		FONT SELECTION: Entweder Latin Modern oder Times / Helvetica
 %\usepackage{lmodern} %Latin modern font
-\usepackage{mathptmx}  %Helvetica / Times New Roman fonts (2 lines)
-\usepackage[scaled=.92]{helvet} %Helvetica / Times New Roman fonts (2 lines)
+
+%\usepackage{mathptmx}  %Helvetica / Times New Roman fonts (2 lines)
+%\usepackage[scaled=.92]{helvet} %Helvetica / Times New Roman fonts (2 lines)
+\usepackage{courier}   % Courier for monospaced fonts
+\usepackage{fourier}   % Fourier/Utopia for rm text 
+\addtokomafont{disposition}{\rmfamily} % Use serif-font for section headers
+\setkomafont{descriptionlabel}{\normalfont\bfseries} % Use bold serif-font for description labels
 
 %		PAGE HEADER / FOOTER
 %	    Warning: There are some redefinitions throughout the master.tex-file!  DON'T CHANGE THESE REDEFINITIONS!
 \RequirePackage[automark,headsepline,footsepline]{scrlayer-scrpage}
 \pagestyle{scrheadings}
-\renewcommand*{\pnumfont}{\upshape\sffamily}
-\renewcommand*{\headfont}{\upshape\sffamily}
-\renewcommand*{\footfont}{\upshape\sffamily}
+
+% Use e.g. \renewcommand*{\pnumfont}{\upshape\sffamily} for Sans Serif font in page header and footer  
+\renewcommand*{\pnumfont}{\upshape}
+\renewcommand*{\headfont}{\upshape}
+\renewcommand*{\footfont}{\upshape}
 \renewcommand{\chaptermarkformat}{}
 \RedeclareSectionCommand[beforeskip=0pt]{chapter}
 \clearscrheadfoot
