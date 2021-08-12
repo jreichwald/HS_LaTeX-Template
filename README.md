@@ -18,9 +18,7 @@ First, you'll need a working LaTeX installation or Online-Plattform. Please find
 * Mac-User: [MacTex](http://www.tug.org/mactex/index.html)
 * Linux-User: [TexLive](http://www.tug.org/texlive/) (included in most Linux distributions)
 
-Next, you'll need a LaTeX Editor you're comfortable with. Any text editor
-(e.g. vi/vim, atom, sublime etc.) will do the job. Here are two specialized
-LaTeX editors tested with the template:
+Next, you'll need a LaTeX Editor you're comfortable with (Overleaf-Users can skip this section since the editor is already included in Overleaf). Any text editor (e.g. vi/vim, emacs, atom, sublime etc.) will do the job. Here are two specialized LaTeX editors tested with the template:
 
 * [TexStudio](http://www.texstudio.org) (Platform-Independent)
 * [TexShop](http://pages.uoregon.edu/koch/texshop/) (Mac only)
