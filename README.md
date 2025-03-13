@@ -1,4 +1,4 @@
-# LaTeX-Template for Bachelor- and Masterthesis at Mannheim University of Applied Sciences
+# LaTeX-Template for Bachelor- and Masterthesis at Mannheim Technical University of Applied Sciences
  
 ## General Notes
 * __This template is just a sample!__ Please adapt it to the requirements of your scientific advisor (i.e. adapt citation style, page margins etc.)
